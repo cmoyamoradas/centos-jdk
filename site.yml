@@ -1,0 +1,10 @@
+---
+# This playbook set up a jdk distribution on a centos 7 server
+
+- name: apply common configuration and install a jdk distribution
+  hosts: all
+  remote_user: root
+
+  roles:
+    - commons
+    - jdk
