@@ -3,7 +3,7 @@
 
 - name: apply common configuration and install a jdk distribution
   hosts: all
-  remote_user: root
+  remote_user: cmoya
 
   roles:
     - commons

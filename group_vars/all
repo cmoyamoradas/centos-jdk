@@ -1,0 +1,6 @@
+---
+# Variables applicable to all host groups
+
+proxy_url: http://sdhersquid01v.sp.securitasdirect.local:3128
+proxy_username:
+proxy_password:

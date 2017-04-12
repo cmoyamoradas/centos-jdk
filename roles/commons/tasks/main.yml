@@ -1,0 +1,18 @@
+---
+# Common plays
+
+- name: be sure libselinux-python are installed
+  yum:
+    name=libselinux-python
+    state=present
+  become: true
+- name: Configure proxy 
+  template:
+    src: yum.conf.j2
+    dest: /etc/yum.conf
+  become: true
+- name: Yum update
+  yum:
+    name: '*'
+    state: latest
+  become: true
