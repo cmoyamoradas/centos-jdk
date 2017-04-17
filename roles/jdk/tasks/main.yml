@@ -1,0 +1,6 @@
+---
+- name: Install JDK
+  yum:
+    name: "{{ java_distribution }}"
+    state: present
+  become: true
